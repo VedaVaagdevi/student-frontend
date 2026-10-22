@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Record Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Record Management</h1>
+
+    <div id="message" class="message hidden"></div>
+
+    <form id="studentForm">
+      <input type="hidden" id="studentId" />
+      <input type="text" id="rollNumber" placeholder="Roll Number" required />
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="branch" placeholder="Branch" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <div class="buttons">
+        <button type="submit" id="submitBtn">Add Student</button>
+        <button type="button" id="cancelBtn" class="secondary hidden">Cancel</button>
+      </div>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
